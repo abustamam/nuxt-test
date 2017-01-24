@@ -1,6 +1,9 @@
 # dependencies
 node_modules
 
+# intelliJ
+.idea
+
 # logs
 npm-debug.log
 
