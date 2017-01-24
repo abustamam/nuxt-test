@@ -15,6 +15,11 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": "6.9.2",
+    "yarn": "0.18.1"
   }
 }
