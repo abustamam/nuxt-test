@@ -3,7 +3,7 @@ node_modules
 
 # intelliJ
 .idea
-.iml
+*.iml
 
 # logs
 npm-debug.log
