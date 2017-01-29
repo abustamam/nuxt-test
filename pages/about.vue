@@ -2,7 +2,7 @@
   <section class="container">
     <img src="../assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
     <h1 class="title">
-      This page is loaded from the {{ name }}
+      This page is loaded from the {{name}}
     </h1>
     <h2 class="info" v-if="name === 'client'">
       Please refresh the page
@@ -12,19 +12,12 @@
     </nuxt-link>
   </section>
 </template>
+
 <script>
-export default {
-  data ({ req }) {
-    return {
-      name: req ? 'server' : 'client'
-    }
-  },
-  head () {
-    return {
-      title: `About Page (${this.name}-side)`
-    }
+  export default {
+    data: ({req}) => ({name: req ? 'server' : 'client'}),
+    head: () => ({title: `About Page (${this.name}-side)`})
   }
-}
 </script>
 
 <style scoped lang="scss">
